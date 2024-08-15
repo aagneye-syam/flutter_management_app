@@ -69,6 +69,12 @@ class WelcomeCard extends StatelessWidget {
         border: Border.all(
           color: const Color.fromARGB(255, 5, 66, 116),
         ),
+        boxShadow: [
+          BoxShadow(
+              color: Colors.black.withOpacity(0.2),
+              blurRadius: 10,
+              offset: Offset(0, 5))
+        ],
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,

@@ -26,19 +26,25 @@ class MyApp extends StatelessWidget {
             ),
           ),
           actions: <Widget>[
-            Container(
-              margin: EdgeInsets.only(right: 16),
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.white,
-              ),
-              child: IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.person,
-                    size: 35,
-                    color: Colors.grey,
-                  )),
+            Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(right: 16),
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white,
+                  ),
+                  child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.person,
+                        size: 35,
+                        color: Colors.grey,
+                      )),
+                ),
+              ],
             )
           ],
         ),

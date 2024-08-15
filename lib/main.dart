@@ -10,6 +10,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: (Color.fromARGB(255, 86, 89, 102)),
+        ),
+      ),
+    );
   }
 }

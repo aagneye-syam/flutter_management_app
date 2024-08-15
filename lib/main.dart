@@ -14,6 +14,9 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: (Color.fromARGB(255, 86, 89, 102)),
+          leading: IconButton(
+            icon: Icon(Icons.menu),
+          ),
         ),
       ),
     );

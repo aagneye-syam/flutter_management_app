@@ -83,6 +83,12 @@ class WelcomeCard extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
+          SizedBox(height: 20),
+          ElevatedButton.icon(
+            onPressed: () {},
+            icon: Icon(Icons.exit_to_app),
+            label: Text('Sign Out'),
+          )
         ],
       ),
     );

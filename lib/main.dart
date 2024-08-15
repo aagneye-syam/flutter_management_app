@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
           ),
           actions: <Widget>[
             Container(
+              margin: EdgeInsets.only(right: 16),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.white,

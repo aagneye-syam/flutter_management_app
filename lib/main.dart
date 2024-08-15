@@ -22,11 +22,16 @@ class MyApp extends StatelessWidget {
           ),
           actions: <Widget>[
             Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.white,
+              ),
               child: IconButton(
                   onPressed: () {},
                   icon: Icon(
                     Icons.person,
                     size: 35,
+                    color: Colors.grey,
                   )),
             )
           ],

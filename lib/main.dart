@@ -73,7 +73,8 @@ class WelcomeCard extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Icons.account_circle),
+          Icon(Icons.account_circle,
+              size: 50, color: const Color.fromARGB(255, 81, 81, 81)),
           SizedBox(
             height: 20,
           )

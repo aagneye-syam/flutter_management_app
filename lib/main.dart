@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: (Color.fromARGB(255, 86, 89, 102)),
           leading: IconButton(
             icon: Icon(Icons.menu),
+            onPressed: () {},
           ),
         ),
       ),

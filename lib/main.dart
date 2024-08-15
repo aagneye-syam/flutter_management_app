@@ -70,6 +70,15 @@ class WelcomeCard extends StatelessWidget {
           color: const Color.fromARGB(255, 5, 66, 116),
         ),
       ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(Icons.account_circle),
+          SizedBox(
+            height: 20,
+          )
+        ],
+      ),
     );
   }
 }

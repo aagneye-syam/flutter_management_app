@@ -20,13 +20,15 @@ class MyApp extends StatelessWidget {
             ),
             onPressed: () {},
           ),
-          actions: [
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.person,
-                  size: 35,
-                ))
+          actions: <Widget>[
+            Container(
+              child: IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.person,
+                    size: 35,
+                  )),
+            )
           ],
         ),
       ),

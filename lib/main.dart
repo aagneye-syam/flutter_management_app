@@ -75,9 +75,14 @@ class WelcomeCard extends StatelessWidget {
         children: [
           Icon(Icons.account_circle,
               size: 50, color: const Color.fromARGB(255, 81, 81, 81)),
-          SizedBox(
-            height: 20,
-          )
+          SizedBox(height: 20),
+          Text(
+            'Welcome, Username',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ],
       ),
     );

@@ -48,6 +48,27 @@ class MyApp extends StatelessWidget {
             )
           ],
         ),
+        body: SafeArea(
+          child: Center(
+            child: WelcomeCard(),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class WelcomeCard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(
+          color: const Color.fromARGB(255, 5, 66, 116),
+        ),
       ),
     );
   }

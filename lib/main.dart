@@ -20,6 +20,11 @@ class MyApp extends StatelessWidget {
             ),
             onPressed: () {},
           ),
+          title: Center(
+            child: Text(
+              'Offset printing press',
+            ),
+          ),
           actions: <Widget>[
             Container(
               margin: EdgeInsets.only(right: 16),

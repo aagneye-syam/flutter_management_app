@@ -14,13 +14,13 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: (Color.fromARGB(255, 86, 89, 102)),
           leading: IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.menu,
               size: 37,
             ),
             onPressed: () {},
           ),
-          title: Center(
+          title: const Center(
             child: Text(
               'Offset printing press',
             ),
@@ -32,15 +32,15 @@ class MyApp extends StatelessWidget {
                   margin: EdgeInsets.only(right: 16),
                   width: 40,
                   height: 40,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     color: Colors.white,
                   ),
                   child: IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.person,
-                        size: 35,
+                        size: 24,
                         color: Colors.grey,
                       )),
                 ),

@@ -125,7 +125,10 @@ class ProductListCard extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Product Card'),
+          Text(
+            'Product List',
+            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+          ),
           SizedBox(
             height: 20,
           )

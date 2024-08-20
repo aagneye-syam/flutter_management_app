@@ -132,7 +132,12 @@ class ProductListCard extends StatelessWidget {
           ),
           SizedBox(height: 20),
           Container(
-            padding: EdgeInsets.all(20),
+            padding: EdgeInsets.all(15),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: Colors.grey.shade300),
+            ),
           )
         ],
       ),

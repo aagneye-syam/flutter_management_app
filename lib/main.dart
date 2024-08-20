@@ -160,6 +160,7 @@ class ProductListCard extends StatelessWidget {
                   'GST: 18',
                   style: TextStyle(fontSize: 16),
                 ),
+                SizedBox(height: 15)
               ],
             ),
           ),

@@ -110,6 +110,7 @@ class ProductListCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10),
@@ -129,8 +130,9 @@ class ProductListCard extends StatelessWidget {
             'Product List',
             style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           ),
-          SizedBox(
-            height: 20,
+          SizedBox(height: 20),
+          Container(
+            padding: EdgeInsets.all(20),
           )
         ],
       ),

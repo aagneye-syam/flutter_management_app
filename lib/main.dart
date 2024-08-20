@@ -160,7 +160,17 @@ class ProductListCard extends StatelessWidget {
                   'GST: 18',
                   style: TextStyle(fontSize: 16),
                 ),
-                SizedBox(height: 15)
+                SizedBox(height: 15),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(primary: Colors.blue),
+                      child: Text('Edit'),
+                    ),
+                  ],
+                )
               ],
             ),
           ),

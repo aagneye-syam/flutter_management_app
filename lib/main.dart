@@ -169,6 +169,11 @@ class ProductListCard extends StatelessWidget {
                       style: ElevatedButton.styleFrom(primary: Colors.blue),
                       child: Text('Edit'),
                     ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(primary: Colors.red),
+                      child: Text('Delete'),
+                    ),
                   ],
                 )
               ],

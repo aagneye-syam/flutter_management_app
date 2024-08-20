@@ -137,6 +137,13 @@ class ProductListCard extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.circular(8),
               border: Border.all(color: Colors.grey.shade300),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.3),
+                  blurRadius: 5,
+                  offset: Offset(0, 3),
+                ),
+              ],
             ),
           )
         ],

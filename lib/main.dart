@@ -48,9 +48,14 @@ class MyApp extends StatelessWidget {
             )
           ],
         ),
-        body: SafeArea(
-          child: Center(
-            child: WelcomeCard(),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              WelcomeCard(),
+              SizedBox(height: 20),
+              ProductListCard(),
+            ],
           ),
         ),
       ),
@@ -98,5 +103,12 @@ class WelcomeCard extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+class ProductListCard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }

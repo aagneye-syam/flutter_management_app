@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               WelcomeCard(),
-              SizedBox(height: 20),
+              SizedBox(height: 90),
               ProductListCard(),
             ],
           ),

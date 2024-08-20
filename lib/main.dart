@@ -145,7 +145,24 @@ class ProductListCard extends StatelessWidget {
                 ),
               ],
             ),
-          )
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Name: Envelope',
+                  style: TextStyle(fontSize: 16),
+                ),
+                Text(
+                  'Details: envelope',
+                  style: TextStyle(fontSize: 16),
+                ),
+                Text(
+                  'GST: 18',
+                  style: TextStyle(fontSize: 16),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

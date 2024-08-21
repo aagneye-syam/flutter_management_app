@@ -80,6 +80,20 @@ class MyApp extends StatelessWidget {
                   Navigator.pop(context);
                 },
               ),
+              ListTile(
+                title: const Text('Tasks'),
+                onTap: () {
+                  // Action when 'Tasks' is clicked
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                title: const Text('Finance'),
+                onTap: () {
+                  // Action when 'Finance' is clicked
+                  Navigator.pop(context);
+                },
+              ),
             ],
           ),
         ),

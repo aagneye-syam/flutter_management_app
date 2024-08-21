@@ -73,6 +73,13 @@ class MyApp extends StatelessWidget {
                   Navigator.pop(context);
                 },
               ),
+              ListTile(
+                title: const Text('Orders'),
+                onTap: () {
+                  // Action when 'Orders' is clicked
+                  Navigator.pop(context);
+                },
+              ),
             ],
           ),
         ),

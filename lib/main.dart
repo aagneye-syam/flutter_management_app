@@ -18,7 +18,9 @@ class MyApp extends StatelessWidget {
               Icons.menu,
               size: 37,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+            },
           ),
           title: const Center(
             child: Text(
@@ -37,12 +39,13 @@ class MyApp extends StatelessWidget {
                     color: Colors.white,
                   ),
                   child: IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.person,
-                        size: 24,
-                        color: Colors.grey,
-                      )),
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.person,
+                      size: 24,
+                      color: Colors.grey,
+                    ),
+                  ),
                 ),
               ],
             )

@@ -24,6 +24,14 @@ class OrderDashboard extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  //action
+                },
+                child: Text('ADD Order'),
+              )
+            ],
           ),
         ),
       ),

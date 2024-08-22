@@ -20,6 +20,12 @@ class OrderDashboard extends StatelessWidget {
           ),
           title: Text('Order Dashboard'),
         ),
+        body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+          ),
+        ),
       ),
     );
   }

@@ -18,6 +18,7 @@ class OrderDashboard extends StatelessWidget {
               //action to navigate
             },
           ),
+          title: Text('Order Dashboard'),
         ),
       ),
     );

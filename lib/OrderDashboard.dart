@@ -10,6 +10,16 @@ class OrderDashboard extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
+      home: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              //action to navigate
+            },
+          ),
+        ),
+      ),
     );
   }
 }

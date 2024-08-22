@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: (Color.fromARGB(255, 86, 89, 102)),
+          backgroundColor: (Colors.blueGrey),
           leading: IconButton(
             icon: const Icon(
               Icons.menu,

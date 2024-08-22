@@ -5,6 +5,11 @@ class OrderDashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      title: "Order Dashboard",
+      theme: ThemeData(
+        primarySwatch: Colors.blueGrey,
+      ),
+    );
   }
 }

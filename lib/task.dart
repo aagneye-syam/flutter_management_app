@@ -1,8 +1,21 @@
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatelessWidget {
+class OrdersPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+          title: Text('Offset Printing Press'),
+        ),
+      ),
+    );
   }
 }

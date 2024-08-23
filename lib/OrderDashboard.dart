@@ -40,16 +40,27 @@ class OrderDashboard extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Expanded(
-                  child: DataTable(
-                columns: [
-                  DataColumn(label: Text('Product Name')),
-                  DataColumn(label: Text('Quantity')),
-                  DataColumn(label: Text('Deadline')),
-                  DataColumn(label: Text('Status')),
-                  DataColumn(label: Text('Action')),
-                ],
-                rows: [],
-              ))
+                child: DataTable(
+                  columns: [
+                    DataColumn(label: Text('Product Name')),
+                    DataColumn(label: Text('Quantity')),
+                    DataColumn(label: Text('Deadline')),
+                    DataColumn(label: Text('Status')),
+                    DataColumn(label: Text('Action')),
+                  ],
+                  rows: [
+                    DataRow(
+                      cells: [
+                        DataCell(Text('No products added.')),
+                        DataCell(Text('')),
+                        DataCell(Text('')),
+                        DataCell(Text('')),
+                        DataCell(Text('')),
+                      ],
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),

@@ -38,6 +38,18 @@ class OrderDashboard extends StatelessWidget {
                   labelText: 'Search Orders',
                 ),
               ),
+              SizedBox(height: 20),
+              Expanded(
+                  child: DataTable(
+                columns: [
+                  DataColumn(label: Text('Product Name')),
+                  DataColumn(label: Text('Quantity')),
+                  DataColumn(label: Text('Deadline')),
+                  DataColumn(label: Text('Status')),
+                  DataColumn(label: Text('Action')),
+                ],
+                rows: [],
+              ))
             ],
           ),
         ),

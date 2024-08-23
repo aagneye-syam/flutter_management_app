@@ -30,7 +30,14 @@ class OrderDashboard extends StatelessWidget {
                   //action
                 },
                 child: Text('ADD Order'),
-              )
+              ),
+              SizedBox(height: 20),
+              TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Search Orders',
+                ),
+              ),
             ],
           ),
         ),

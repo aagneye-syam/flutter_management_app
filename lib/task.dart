@@ -14,6 +14,12 @@ class OrdersPage extends StatelessWidget {
             },
           ),
           title: Text('Offset Printing Press'),
+          actions: [
+            CircleAvatar(
+              child: Text('A'),
+              backgroundColor: Colors.brown,
+            )
+          ],
         ),
       ),
     );

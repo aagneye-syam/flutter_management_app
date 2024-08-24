@@ -18,8 +18,15 @@ class OrdersPage extends StatelessWidget {
             CircleAvatar(
               child: Text('A'),
               backgroundColor: Colors.brown,
-            )
+            ),
+            SizedBox(width: 10),
           ],
+          bottom: TabBar(
+            tabs: [
+              Tab(text: 'Active Orders'),
+              Tab(text: 'Completed Orders'),
+            ],
+          ),
         ),
       ),
     );

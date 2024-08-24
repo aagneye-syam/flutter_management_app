@@ -32,6 +32,14 @@ class UserProfile extends StatelessWidget {
             ProfileItem(label: 'Phone Number:', value: '999999999'),
             ProfileItem(label: 'Username:', value: 'UserName'),
             Spacer(),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  // Handle back to home navigation
+                },
+                child: Text('Back to Home'),
+              ),
+            ),
           ],
         ),
       ),

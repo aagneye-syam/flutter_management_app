@@ -14,6 +14,8 @@ class UserProfile extends StatelessWidget {
             Navigator.pop(context);
           },
         ),
+        title: Text('Offset Printing Press'),
+        centerTitle: true,
       ),
     );
   }

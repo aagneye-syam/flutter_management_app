@@ -15,6 +15,7 @@ class OrdersPage extends StatelessWidget {
             },
           ),
           title: Text('Offset Printing Press'),
+          centerTitle: true,
           actions: [
             CircleAvatar(
               child: Text('A'),

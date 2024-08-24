@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_management_app/OrderDashboard.dart';
-import 'package:flutter_management_app/task.dart';
+import 'package:flutter_management_app/user_profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: OrdersPage(),
+      home: UserProfile(),
     );
   }
 }

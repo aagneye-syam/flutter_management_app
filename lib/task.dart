@@ -29,6 +29,25 @@ class OrdersPage extends StatelessWidget {
             ],
           ),
         ),
+        drawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              DrawerHeader(
+                child: Text('Menu'),
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 243, 131, 33),
+                ),
+              ),
+              ListTile(
+                title: Text('Option 1'),
+                onTap: () {
+                  // Handle navigation
+                },
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

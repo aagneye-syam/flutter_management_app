@@ -26,9 +26,26 @@ class UserProfile extends StatelessWidget {
               'User Profile',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
+            SizedBox(height: 20),
           ],
         ),
       ),
     );
+  }
+}
+
+class ProfileItem extends StatelessWidget {
+  final String label;
+  final String value;
+
+  const ProfileItem({
+    Key? key,
+    required this.label,
+    required this.value,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }

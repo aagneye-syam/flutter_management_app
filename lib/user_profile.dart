@@ -17,6 +17,18 @@ class UserProfile extends StatelessWidget {
         title: Text('Offset Printing Press'),
         centerTitle: true,
       ),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'User Profile',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

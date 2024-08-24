@@ -46,6 +46,29 @@ class ProfileItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      child: Row(
+        children: [
+          Expanded(
+            flex: 3,
+            child: Text(
+              label,
+              style: TextStyle(fontSize: 18),
+            ),
+          ),
+          Expanded(
+            flex: 5,
+            child: TextFormField(
+              initialValue: value,
+              decoration: InputDecoration(
+                suffixIcon: Icon(Icons.edit),
+                border: OutlineInputBorder(),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

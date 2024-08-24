@@ -48,6 +48,10 @@ class OrdersPage extends StatelessWidget {
             ],
           ),
         ),
+        body: TabBarView(children: [
+          Center(child: Text('No Active Orders')),
+          Center(child: Text('No Completed Orders')),
+        ]),
       ),
     );
   }

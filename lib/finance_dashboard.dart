@@ -7,15 +7,21 @@ class FinanceDashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Offset Printing Press'),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back), // Back arrow instead of menu
-          onPressed: () {
-            // Define back button behavior here
-            Navigator.pop(context);
-          },
-        ),
-      ),
+          backgroundColor: Colors.blueGrey,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+          title: Text('Offset Printing Press'),
+          centerTitle: true,
+          actions: [
+            CircleAvatar(
+              child: Text('A'),
+              backgroundColor: Colors.brown,
+            ),
+          ]),
     );
   }
 }

@@ -7,21 +7,35 @@ class FinanceDashboard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.blueGrey,
-          leading: IconButton(
-            icon: Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.pop(context);
-            },
+        backgroundColor: Colors.blueGrey,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: Text('Offset Printing Press'),
+        centerTitle: true,
+        actions: [
+          CircleAvatar(
+            child: Text('A'),
+            backgroundColor: Colors.brown,
           ),
-          title: Text('Offset Printing Press'),
-          centerTitle: true,
-          actions: [
-            CircleAvatar(
-              child: Text('A'),
-              backgroundColor: Colors.brown,
+        ],
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Finance Dashboard',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
-          ]),
+            SizedBox(height: 20),
+          ],
+        ),
+      ),
     );
   }
 }

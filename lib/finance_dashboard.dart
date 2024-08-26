@@ -33,6 +33,10 @@ class FinanceDashboard extends StatelessWidget {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [],
+            ),
           ],
         ),
       ),

@@ -35,7 +35,9 @@ class FinanceDashboard extends StatelessWidget {
             SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [],
+              children: [
+                _buildDashboardTile('Total Amount', '₹0.00'),
+              ],
             ),
           ],
         ),
@@ -58,6 +60,15 @@ Widget _buildDashboardTile(String title, String amount) {
           blurRadius: 5,
           offset: Offset(0, 3),
         ),
+      ],
+    ),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(title, style: TextStyle(fontSize: 16)),
+        SizedBox(height: 10),
+        Text(amount,
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
       ],
     ),
   );

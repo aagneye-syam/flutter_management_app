@@ -43,3 +43,22 @@ class FinanceDashboard extends StatelessWidget {
     );
   }
 }
+
+Widget _buildDashboardTile(String title, String amount) {
+  return Container(
+    width: 160,
+    padding: EdgeInsets.all(16),
+    decoration: BoxDecoration(
+      color: Colors.white,
+      borderRadius: BorderRadius.circular(8),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.grey.withOpacity(0.5),
+          spreadRadius: 2,
+          blurRadius: 5,
+          offset: Offset(0, 3),
+        ),
+      ],
+    ),
+  );
+}

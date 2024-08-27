@@ -45,6 +45,7 @@ class FinanceDashboard extends StatelessWidget {
               'Line Graph',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
+            SizedBox(height: 10),
           ],
         ),
       ),
@@ -78,4 +79,8 @@ Widget _buildDashboardTile(String title, String amount) {
       ],
     ),
   );
+}
+
+Widget _buildDropdown(String label, String selectedValue) {
+  return Column();
 }

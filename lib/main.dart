@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_management_app/finance_dashboard.dart';
-import 'package:fl_chart/fl_chart.dart';
 
 void main() {
   runApp(const MyApp());

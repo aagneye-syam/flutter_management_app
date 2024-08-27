@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fl_chart/fl_chart.dart';
 
 class FinanceDashboard extends StatelessWidget {
   const FinanceDashboard({super.key});
@@ -149,5 +150,35 @@ Widget _buildYAxisDropdown() {
 Widget _buildLineGraph() {
   return SizedBox(
     height: 200,
+    child: LineChart(
+      LineChartData(
+        gridData: FlGridData(show: true),
+        titlesData: FlTitlesData(show: true),
+        borderData: FlBorderData(
+          show: true,
+          border: Border.all(color: Colors.grey, width: 1),
+        ),
+        minX: 0,
+        maxX: 7,
+        minY: 0,
+        maxY: 6,
+        lineBarsData: [
+          LineChartBarData(
+            spots: [
+              FlSpot(0, 3),
+              FlSpot(1, 1),
+              FlSpot(2, 4),
+              FlSpot(3, 2),
+              FlSpot(4, 5),
+              FlSpot(5, 2),
+              FlSpot(6, 4),
+            ],
+            isCurved: true,
+            barWidth: 3,
+            dotData: FlDotData(show: false),
+          ),
+        ],
+      ),
+    ),
   );
 }

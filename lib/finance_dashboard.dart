@@ -94,6 +94,17 @@ Widget _buildDropdown(String label, String selectedValue) {
           border: Border.all(color: Colors.grey),
           borderRadius: BorderRadius.circular(8),
         ),
+        child: DropdownButton<String>(
+          isExpanded: true,
+          value: selectedValue,
+          items: <String>['Product Name', 'Order ID'].map((String value) {
+            return DropdownMenuItem<String>(
+              value: value,
+              child: Text(value),
+            );
+          }).toList(),
+          onChanged: (String? newValue) {},
+        ),
       )
     ],
   );

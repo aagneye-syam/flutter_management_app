@@ -47,6 +47,8 @@ class FinanceDashboard extends StatelessWidget {
             ),
             SizedBox(height: 10),
             _buildDropdown('X-Axis', 'Product Name'),
+            SizedBox(height: 10),
+            _buildDropdown('Y-Axis', 'Amount'),
           ],
         ),
       ),

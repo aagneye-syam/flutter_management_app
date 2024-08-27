@@ -37,7 +37,13 @@ class FinanceDashboard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 _buildDashboardTile('Total Amount', '₹0.00'),
+                _buildDashboardTile('Total GST', '₹0.00'),
               ],
+            ),
+            SizedBox(height: 30),
+            Text(
+              'Line Graph',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ],
         ),

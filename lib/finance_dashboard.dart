@@ -146,15 +146,8 @@ Widget _buildYAxisDropdown() {
   );
 }
 
-Widget _buildLineGraphPlaceholder() {
-  return Container(
+Widget _buildLineGraph() {
+  return SizedBox(
     height: 200,
-    color: Colors.grey[200],
-    child: Center(
-      child: Text(
-        'Line Graph Placeholder',
-        style: TextStyle(color: Colors.grey),
-      ),
-    ),
   );
 }

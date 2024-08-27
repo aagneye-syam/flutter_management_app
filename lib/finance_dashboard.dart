@@ -46,9 +46,9 @@ class FinanceDashboard extends StatelessWidget {
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
-            _buildDropdown('X-Axis', 'Product Name'),
+            _buildXAxisDropdown(),
             SizedBox(height: 10),
-            _buildDropdown('Y-Axis', 'Amount'),
+            _buildYAxisDropdown(),
           ],
         ),
       ),
@@ -84,11 +84,12 @@ Widget _buildDashboardTile(String title, String amount) {
   );
 }
 
-Widget _buildDropdown(String label, String selectedValue) {
+Widget _buildXAxisDropdown() {
+  String selectedXAxisValue = 'Product Name'; // Default value
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
-      Text(label, style: TextStyle(fontSize: 16)),
+      Text('X-Axis', style: TextStyle(fontSize: 16)),
       SizedBox(height: 5),
       Container(
         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
@@ -98,14 +99,47 @@ Widget _buildDropdown(String label, String selectedValue) {
         ),
         child: DropdownButton<String>(
           isExpanded: true,
-          value: selectedValue,
+          value: selectedXAxisValue,
           items: <String>['Product Name', 'Order ID'].map((String value) {
             return DropdownMenuItem<String>(
               value: value,
               child: Text(value),
             );
           }).toList(),
-          onChanged: (String? newValue) {},
+          onChanged: (String? newValue) {
+            // Handle the change of selected X-Axis value
+          },
+        ),
+      )
+    ],
+  );
+}
+
+Widget _buildYAxisDropdown() {
+  String selectedYAxisValue = 'Amount'; // Default value
+  return Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      Text('Y-Axis', style: TextStyle(fontSize: 16)),
+      SizedBox(height: 5),
+      Container(
+        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.grey),
+          borderRadius: BorderRadius.circular(8),
+        ),
+        child: DropdownButton<String>(
+          isExpanded: true,
+          value: selectedYAxisValue,
+          items: <String>['Amount', 'GST'].map((String value) {
+            return DropdownMenuItem<String>(
+              value: value,
+              child: Text(value),
+            );
+          }).toList(),
+          onChanged: (String? newValue) {
+            // Handle the change of selected Y-Axis value
+          },
         ),
       )
     ],

@@ -46,6 +46,7 @@ class FinanceDashboard extends StatelessWidget {
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
+            _buildDropdown('X-Axis', 'Product Name'),
           ],
         ),
       ),
@@ -82,5 +83,18 @@ Widget _buildDashboardTile(String title, String amount) {
 }
 
 Widget _buildDropdown(String label, String selectedValue) {
-  return Column();
+  return Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      Text(label, style: TextStyle(fontSize: 16)),
+      SizedBox(height: 5),
+      Container(
+        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.grey),
+          borderRadius: BorderRadius.circular(8),
+        ),
+      )
+    ],
+  );
 }
